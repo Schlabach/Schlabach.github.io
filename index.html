@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Matthew Schlabach - Software Engineer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+      
+      nav {
+        background-color: #ccc;
+        padding: 10px;
+        text-align: center;
+      }
+      
+      nav a {
+        color: #333;
+        text-decoration: none;
+        margin: 10px;
+        font-weight: bold;
+      }
+      
+      nav a:hover {
+        color: #fff;
+        background-color: #333;
+      }
+      
+      main {
+        margin: 20px;
+      }
+      
+      .project {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #eee;
+        box-shadow: 0 0 5px #999;
+      }
+      
+      .project img {
+        flex: 1 1 300px;
+        margin-right: 20px;
+        max-width: 100%;
+      }
+      
+      .project-details {
+        flex: 1 1 300px;
+      }
+      
+      .project h2 {
+        margin-top: 0;
+      }
+      
+      .project p {
+        margin-bottom: 10px;
+      }
+      
+      .project a {
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      
+      .project a:hover {
+        color: #000;
+      }
+      
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Matthew Schlabach</h1>
+      <h2>Software Engineer</h2>
+    </header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>I am a software engineer with 6 months of experience in developing web applications using C#, SQL, HTML, CSS, and JavaScript. I have a strong background in computer science and a passion for building scalable, maintainable, and efficient software solutions.</p>
+        <p>When I'm not coding, I enjoy hiking, playing board games, and spending time with my family.</p>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+          <!--<img src="https://via.placeholder.com/300x200" alt="Project 1">-->
+          <div class="project-details">
+            <h2>Taco Parser 1</h2>
+            <p>
+            <ul>
+              <li>Application made in Visual Studio using C#, .NET Core, and xUnit testing.</li>
+              <li>Uses a CSV document which lists the city and coordinates of different restaurants.</li>
+              <li>The application splits each line of the document into an array ([location name, latitude, longitude]).</li>
+              <li>Test-driven development ensures that invalid and missing data is handled correctly.</li>
+              <li>If the data is out of bounds or cannot be parsed, then the parse method returns null. Otherwise, the latitude and longitude are parsed.</li>
+              <li>The distance between each pair of coordinates is calculated in order to find the two restaurants furthest apart</li>
+            </p>
+            <p>Technologies used: C#, .NET Core, xUnit, Geolocator</p>
