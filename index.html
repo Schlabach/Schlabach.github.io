@@ -1,6 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head><meta http-equiv="cache-control" content="no-cache"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="-1"><style type="text/css">.lw { font-size: 60px; }
+.image-container {
+  text-align: center; /* Center the child content horizontally */
+}
+
+.images {
+  width: 75%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; /* Ensures the image is a block element to center properly */
+}
+.navbar {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 2px solid 	#536878; /* Define the initial border style */
+  border-radius: 25px; /* Add rounded corners */
+  color: 	#536878;
+  transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
+    /* Position the button on the right side */
+  position: fixed;
+  top: 20px; /* Adjust the top position if needed */
+  right: 20px; /* Adjust the right position to your desired distance from the right edge */
+}
+
+/* Define the hover styles for the button */
+.navbar:hover {
+  background-color: 	#536878; /* Change the background color on hover */
+  color: #fff; /* Change the text color on hover */
+}</style>
+
+  
     <title>Matthew Schlabach - Software Engineer</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +44,8 @@
       }
       
       header {
-        background-color: #333;
-        color: #fff;
+        background-color: #fff;
+        color: #0000000;
         padding: 10px;
         text-align: center;
       }
@@ -86,10 +118,22 @@
     </style>
   </head>
   <body>
-    <header>
-      <h1>Matthew Schlabach</h1>
-      <h2>Software Engineer</h2>
-    </header>
+    <div>
+        <a class="navbar" href="/contact">Say Hello</a>
+    </div>
+    <div>
+        <header>
+        <h1>Fullstack Developer &amp; Designer</h1>
+        <p>I craft elegantly practical solutions for complex problems</p>
+        <img class="avatar" src="https://github.com/Schlabach/Schlabach.github.io/blob/main/matt-avatar.png?raw=true" style="width:15%;
+                    height:auto;">
+        </header>
+    </div>
+    <div class="image-container">
+        <img class="images" src="https://raw.githubusercontent.com/Schlabach/Schlabach.github.io/ca0df10f273965b873de25002ba0e12587feec4f/computer.svg" style="width:65%;
+                    height:auto;
+                    margin: 0 auto">
+    </div>
     <nav>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
@@ -108,12 +152,12 @@
           <div class="project-details">
             <h2>Taco Parser 1</h2>
             <p>
-            <ul>
+            </p><ul>
               <li>Application made in Visual Studio using C#, .NET Core, and xUnit testing.</li>
               <li>Uses a CSV document which lists the city and coordinates of different restaurants.</li>
               <li>The application splits each line of the document into an array ([location name, latitude, longitude]).</li>
               <li>Test-driven development ensures that invalid and missing data is handled correctly.</li>
               <li>If the data is out of bounds or cannot be parsed, then the parse method returns null. Otherwise, the latitude and longitude are parsed.</li>
               <li>The distance between each pair of coordinates is calculated in order to find the two restaurants furthest apart</li>
-            </p>
-            <p>Technologies used: C#, .NET Core, xUnit, Geolocator</p>
+            <p></p>
+            <p>Technologies used: C#, .NET Core, xUnit, Geolocator</p><script>// Write JavaScript here</script></ul></div></div></section></main></body>
